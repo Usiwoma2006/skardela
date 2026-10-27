@@ -40,7 +40,7 @@ export const puzzleTypes: { [Type in PuzzleType]: PuzzleTypeEntry<PuzzleMap[Type
     loadPuzzles: async () =>
       (await import("../../../puzzles/latics.json")).default as LaticsPuzzle[],
   },
-    numpuz: {
+  numpuz: {
     loadPuzzles: async () =>
       decipherPuzzles<NumpuzPuzzle>((await import("../../../puzzles/numpuz.json")).default),
   },
